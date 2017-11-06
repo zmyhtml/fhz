@@ -1,0 +1,126 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-06 14:04:44
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-06 14:05:02
+*/
+
+/* 椤堕儴鐒︾偣鍥� */
+.slideBox{position:relative; overflow:hidden; margin:0 auto; max-width:560px;/* 璁剧疆鐒︾偣鍥炬渶澶у搴� */}
+.slideBox .hd{width: 100%; position:absolute; height:35px; line-height:35px; bottom:0; right:0; z-index:1;}
+.slideBox .hd ul{text-align: center;}
+.slideBox .hd li{display:inline-block; width:0.19rem; height:0.19rem; border: 0.04rem solid #fff; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background:#fff; text-indent:-9999px; overflow:hidden; margin:0 6px;}
+.slideBox .hd li.on{background:#3dbb9f;}
+.slideBox .bd{position:relative; z-index:0;}
+.slideBox .bd li{position:relative; text-align:center;}
+.slideBox .bd li img{background:url(../images/loading.gif) center center no-repeat; vertical-align:top; width:100%;/* 鍥剧墖瀹藉害100%锛岃揪鍒拌嚜閫傚簲鏁堟灉 */}
+.slideBox .bd li a{-webkit-tap-highlight-color:rgba(0,0,0,0);} /* 鍘绘帀閾炬帴瑙︽懜楂樹寒 */
+.slideBox .bd li .top-title{display:block; width:100%; height: 100%; position:absolute; bottom:0; text-indent:10px;background-color: rgba(0,0,0,0.4); color:#fff; text-align:center;padding: 2rem 0.7rem; line-height: 1.2em;}
+/* 瀵艰埅鎸夐挳 */
+.top-nav{width: 100%; text-align: center;padding: 0.3rem 0;}
+.top-nav a{display: inline-block; width: 1.12rem; text-align: center;margin: 0 0.1rem;}
+.top-nav a img{width: 100%;}
+/* 鐑棬娓告垙 */
+.main-model{border-top: 0.3rem solid #f1f1f1;}
+.icon-model{position: relative;width: 100%;text-align: center;top: -0.17rem;}
+.icon-model img{width: 1.47rem;}
+.model-content{padding: 0 0.3rem;}
+.link-block{display: block;}
+.game-icon{width: 1.44rem;vertical-align: middle;height: 1.44rem;background: url("../images/loading.gif") no-repeat;background-position: center;}
+.game-message{display: inline-block;max-width: 5.2rem;margin-left: 0.2rem;vertical-align: middle;}
+.game-message-title{font-size: 0.36rem;font-weight: 600;}
+.game-message-hit{color: #999;margin-top: 0.2rem;}
+.game-message-sp1{padding: 0 0.1rem 0 0;border-right: 1px solid #999;}
+.game-message-sp2{color: #3dbb9f;}
+.game-banner{max-width:560px; margin:0.3rem auto; position:relative; overflow:hidden;}
+.game-banner .hd{width:100%; position:absolute; z-index:1; bottom:4px; text-align:center;}
+.game-banner .hd ul{overflow:hidden; display:-moz-box; display:-webkit-box; display:box; height:3px;border-bottom: 1px solid #eae7e7;}
+.game-banner .hd ul li{-moz-box-flex:1; -webkit-box-flex:1; box-flex:1;}
+.game-banner .hd ul .on{background:#3dbb9f;}
+.game-banner .bd{position:relative; z-index:0;}
+.game-banner .bd li img{width:100%;}
+.game-banner .bd li a{-webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 鍙栨秷閾炬帴楂樹寒 */}
+.hot-game-ul{text-align: center;}
+.hot-game-li{width: 25%;vertical-align: top;text-align: center;}
+.hot-game-li p{font-size: 0.26rem;overflow: hidden;white-space:nowrap;margin-top: 0.1rem;}
+.icon-more{display: inline-block;width: 19px;height: 19px;background: url(sprites/more.png) no-repeat;background-size: contain;vertical-align: middle;margin-left: 0.5em;}
+.model-more{text-align: center;padding: 0.6rem 0;}
+/* 浜烘皵涓嬭浇 */
+.game-hd-li{position: relative;padding: 0.2rem 0;}
+.game-down{width: 4em;height: 2em;border-radius: 5px;background-color: transparent;border: 1px solid #3dbb9f;color: #3dbb9f;position: absolute;right: 0;bottom: 2em;padding: 0.1rem 0.15rem;text-align: center;}
+.platform{margin-right: 0.5em;}
+.star{width:1.6rem; height: .315rem; background:url(../images/game/stars.png) no-repeat; background-size: 1.6rem 3.2rem; display: inline-block;}
+.star.s1{background-position: 0 0}
+.star.s2{background-position: 0 -.32rem}
+.star.s3{background-position: 0 -.64rem}
+.star.s4{background-position: 0 -.96rem}
+.star.s5{background-position: 0 -1.28rem}
+.star.s6{background-position: 0 -1.60rem}
+.star.s7{background-position: 0 -1.92rem}
+.star.s8{background-position: 0 -2.24rem}
+.star.s9{background-position: 0 -2.56rem}
+.star.s10{background-position: 0 -2.88rem}
+/* 涓棿banner */
+.midd-banner{position:relative; overflow:hidden; margin:0 auto; max-width:560px;/* 璁剧疆鐒︾偣鍥炬渶澶у搴� */}
+.midd-banner .hd{position:absolute; height:28px; line-height:28px; bottom:0; right:0.3rem; z-index:1;}
+.midd-banner .hd li{display:inline-block; width:0.19rem; height:0.19rem; border: 0.04rem solid #fff; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background:#fff; text-indent:-9999px; overflow:hidden; margin:0 6px;}
+.midd-banner .hd li.on{background:#3dbb9f;}
+.midd-banner .bd{position:relative; z-index:0;}
+.midd-banner .bd li{position:relative; text-align:center;}
+.midd-banner .bd li img{background:url(../images/loading.gif) center center no-repeat; vertical-align:top; width:100%;/* 鍥剧墖瀹藉害100%锛岃揪鍒拌嚜閫傚簲鏁堟灉 */}
+.midd-banner .bd li a{-webkit-tap-highlight-color:rgba(0,0,0,0);} /* 鍘绘帀閾炬帴瑙︽懜楂樹寒 */
+.midd-banner .bd li .tit{display:block; width:100%; position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background-image: linear-gradient(rgba(30,30,30,0),rgba(30,30,30,1)); color:#fff; text-align:left;}
+.midd-banner .bd li .tit span{display: block;width: 73%;overflow: hidden;}
+/* 姣忔棩澶存潯 */
+.news-top-type #mobileList,.news-top-type #pcList{padding: 0 1.28rem;line-height: 30px;color: #3dbb9f;border: 1px solid #3dbb9f;background-color: #fff;border-radius: 5px;margin: 13px 0;}
+.news-top-type #mobileList.news-top-btn-active,.news-top-type #pcList.news-top-btn-active{background-color: #3dbb9f;color: #fff;}
+.news-top-type{padding: 0 15px;}
+.news-list-img{display: block;width: 100%;height: 1.8rem;}
+.news-list-img figure{display: -webkit-box;-webkit-box-align: center;}
+.news-list-img img{display: block;height: 1.8rem;}
+.news-list-img .img-bor{width: 2.4rem;height: 1.8rem;overflow: hidden;background: url("../images/loading.gif") no-repeat;background-position: center;}
+.news-list-img figure figcaption{-webkit-box-flex:1;display: block;margin-left: 10px;}
+.news-list-time{margin-top: 0.1rem;font-size: 13px;color: #999;}
+.news-list-li{padding: 10px 0;}
+.news-list-titile{max-height: 4em;overflow: hidden;word-wrap:break-word;word-break:break-all;font-family: "榛戜綋";font-size: 16px;}
+/*鏋滃瓒ｅ浘*/
+.img-li{width: 49%;margin-bottom: 0.25rem;}
+.img-li .img-a{display: block;height: 3.94rem;width: 3.38rem;overflow: hidden;margin-bottom: 0.2rem;}
+.img-li .img-a img{width: 100%;}
+.img-li .img-show{width: 100%;height: 100%;}
+.mar-lef14{margin-left: 0.05rem;}
+/* 娓告垙鏀荤暐 */
+.gonglue-li{width: 49%;margin-bottom: 0.3rem;height: 2.48rem; overflow: hidden;}
+.gonglue-li .gonglue-a{display: block;width: 100%;position: relative;}
+.gonglue-li img{display: block;width: 100%;background: url("../images/loading.gif") no-repeat;background-position: center;min-height: 0.64rem;}
+.gonglue-li p{height: 100%;background-color: rgba(30,30,30,.3);position: absolute;top: 0;padding: 0.9rem 0.3rem 0 0.3rem;color: #fff;}
+.mar-lef30{margin-left: 0.2rem;}
+/* 鎺掕姒� */
+.tabBox{margin:10px auto;}
+.tabBox .hd{overflow:hidden;}
+.tabBox .hd ul{float:right;width: 100%;text-align: center;padding: 0.05rem 0;}
+.tabBox .hd ul li{display: inline-block; padding:0 5px; vertical-align:top; width: 49%;}
+.tabBox .hd ul li a{display:block;border: 1px solid #3dbb9f;color: #3dbb9f;height: 0.6rem;text-align: center;line-height: 0.6rem;border-radius: 5px;}
+.tabBox .hd ul li.on a{color:#fff; background-color: #3dbb9f;}
+.tabBox .bd ul{padding:0.4rem 0;}
+.tabBox .bd ul li{border-bottom:1px dotted #ddd;padding: 0.2rem 0;}
+.tabBox .bd li a{-webkit-tap-highlight-color:rgba(0,0,0,0); display: block;} /* 鍘绘帀閾炬帴瑙︽懜楂樹寒 */
+.rank-index{display: inline-block;width: 0.5rem;height: 0.5rem;background: url(sprites/renkindex1.png) no-repeat;background-size: contain;color: #fff;text-align: center;line-height: 0.5rem;}
+.rank-indexb{display: inline-block;width: 0.5rem;height: 0.5rem;background: url(sprites/renkindex0.png) no-repeat;background-size: contain;color: #fff;text-align: center;line-height: 0.5rem;}
+.rank-game{color: #666;display: inline-block;vertical-align: middle;width: 4.3rem;margin-left: 0.2rem;}
+.rank-game-title{font-size: 0.34rem;font-weight: 600;color: #333;margin-bottom: 0.2rem;}
+.rank-game-icon{width: 1.44rem;vertical-align: middle;}
+/* 鎺ㄨ崘绀煎寘 */
+#giftBoxMid li{width: 4.5rem;height: 2.6rem;position: relative;overflow: hidden;border-radius: 10px;}
+.gift-bg{width: 4.6rem;height: 2.7rem;position: absolute;top: 0;left: 0;z-index: -1;border-radius: 10px;}
+.gift-content{width: 100%;height: 100%;z-index: 2;background-color: rgba(0,0,0,0.25);}
+.gift-content img{width: 1.44rem;border-radius: 0.3rem;margin: 0.6rem 0.3rem 0 0.2rem;}
+.gift-content p{font-size: 0.26rem;color: #fff;}
+.gift-content .gift-game{font-size: 0.32rem;max-width: 7em;}
+.gift-msg{margin-top: 0.6rem;}
+.swiper-container{position: relative; height: 3.5rem;padding-left: 0.3rem;}
+.swiper-slide{text-align: center; font-size: 18px; background: #fff; /* Center slide text vertically */ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
+.swiper-slide a{display: block;width: 100%;height: 100%;text-align: left;}
+.swiper-pagination-bullet-active{background: #3dbb9f;}
+.gift-dian{width: 0.4rem;height: 0.4rem;position: absolute;top: 0.2rem;right: 0.25rem;z-index: 2;}
+

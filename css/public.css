@@ -1,0 +1,106 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-06 14:02:53
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-06 14:03:10
+*/
+
+/*@import "sprite.css?20161122";*/
+/*html{ font-size:100px;}*/
+
+
+html, body{height: 100%;}
+html{ font-size:100px; word-wrap:break-word; word-break: normal;}
+@media screen and (min-width:755px){html{font-size:100px;}}
+@media screen and (max-width:750px){html{font-size:100px;}}
+@media screen and (max-width:700px){html{font-size:93.3px;}}
+@media screen and (max-width:640px){html{font-size:85.3px;}}
+@media screen and (max-width:610px){html{font-size:81.3px;}}
+@media screen and (max-width:580px){html{font-size:77.3px;}}
+@media screen and (max-width:540px){html{font-size:72px;}}
+@media screen and (max-width:510px){html{font-size:68px;}}
+@media screen and (max-width:480px){html{font-size:64px;}}
+@media screen and (max-width:450px){html{font-size:60px;}}
+@media screen and (max-width:428px){html{font-size:57.1px;}}
+@media screen and (max-width:406px){html{font-size:54.1px;}}
+@media screen and (max-width:375px){html{font-size:50px;}}
+@media screen and (max-width:360px){html{font-size:48px;}}
+@media screen and (max-width:320px){html{font-size:42.6px;}}
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,figcaption,figure,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:.32rem/1 Lucida Grande,'Microsoft YaHei',"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;line-height: 0.4rem;}
+
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}
+
+ul,ol,li{list-style:none}
+a{ text-decoration:none; color:#333;}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}
+q:before,q:after{content:''}
+legend{color:#000}
+fieldset,img{border:0}
+table{border-collapse:collapse;border-spacing:0}
+hr{border:0;height:1px}
+*{-ms-word-break:break-all;word-break:break-all;-ms-word-wrap:break-word;word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0);box-sizing: border-box;}
+
+/*骞冲潎鍒嗗竷*/
+.flexbox{display: -webkit-box; display: -moz-box;display: -o-box;display: -ms-flexbox; display: box; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; box-orient: horizontal; -webkit-box-pack: center; -moz-box-pack: center; box-pack:center;}
+.flexbox > *{ -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1;-webkit-flex: 1;flex: 1;}
+
+.hideTxt{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+.flo-left{float: left;}
+.flo-right{float: right;}
+.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; zoom:1;}
+.clear{ clear:both; display: block; font-size:0; height:0; line-height:0; overflow:hidden;}
+.hidden{ display:none;}
+.text1{ overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.text2{ /*max-height:48px;*/ overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.table{ display:table; width:100%; border:0;}
+.table .tr{ display:table-row;}
+.table .td{ display:table-cell; vertical-align:middle;}
+.text-left{ text-align:left;}
+.text-center{ text-align:center;}
+.text-right{ text-align:right;}
+.line-dot{ border-bottom:1px dotted #a7a7a7; margin-top:5px;}
+.line-sol{ border-bottom: 1px solid #eae7e7;}
+.h10{ height:10px;}
+.icon{display: inline-block}
+.nav-link{display: inline-block;padding: 0.1rem 0.1rem;}
+.blur{filter: url(blur.svg#blur); -webkit-filter: blur(10px); -moz-filter: blur(10px); -ms-filter: blur(10px); filter: blur(10px); filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);}
+/* 澶撮儴 */
+.head-nav{height: 1rem;position: fixed;width: 100%;z-index: 2;}
+.head-nav .top-logo-a{padding: 0;position: absolute;top: 50%;margin-top: -0.22rem;}
+.top-logo{height: 0.44rem;display: block;}
+.icon-top-nav{width: 0.4rem;height: 0.35rem;background: url("sprites/top-nav.png") no-repeat;background-size: contain;padding: 0;right: 10px;top: 15px;}
+.icon-top-search{width: 0.4rem;height: 0.4rem;background: url("sprites/top-search.png") no-repeat;background-size: contain;padding: 0;position: absolute;right: 42px;top: 8px;}
+.head-nav .ui-input-text{width: 5.6rem;margin-left: 10px;display: none;}
+.nav-span1{position: absolute;top: 0.3rem;left: 1.45rem;font-size: 0.36rem;}
+.nav-span2{position: absolute;top: 0.3rem;left: 2.5rem;font-size: 0.36rem;}
+.top-dian1{display: inline-block;width: 0.06rem;height: 0.06rem;border-radius: 50%;background: #333;position: relative;left: -7px;top:-0.1rem;}
+.top-dian2{display: inline-block;width: 0.06rem;height: 0.06rem;border-radius: 50%;background: #333;position: relative;left: -7px;top:-0.1rem;}
+.head-nav .top-back-a{margin: 0.21rem 0 0.21rem 0.3rem;width: 0.28rem;height: 0.58rem;background: url("sprites/back.png") no-repeat;background-size: contain;z-index: 10;}
+.top-title{position: absolute;top: 0;width: 100%;height: 100%;line-height: 50px;text-align: center;font-size: 24px;}
+.icon-top-user{width: 0.4rem;height: 0.4rem;background: url("sprites/user.png") no-repeat;background-size: contain;padding: 0;position: absolute;right: 42px;top: 8px;}
+/* 灏鹃儴 */
+.bottom-footer{color: #666;-webkit-box-shadow: 0 -1px 3px rgba(0,0,0,.15);-moz-box-shadow: 0 -1px 3px rgba(0,0,0,.15);box-shadow: 0 -1px 3px rgba(0,0,0,.15);padding: 0.3rem 0;border: 0;}
+.bottom-footer p{color: #666;font-size: 15px;}
+.bottom-footer a{color: #666;font-size: 15px;display: block;}
+
+/* 渚ф粦瀵艰埅 */
+#myPanel{background-color: #333;}
+.map-list{padding: 0.3rem 0 0.2rem 0.3rem;font-size: 19px;font-weight: bold;}
+.map-list-detail{padding: 0 0 0 0.3rem;font-size: 15px;}
+.map-list-detail .nav-link{padding: 0 0.2rem 0.3rem 0;}
+.line-lis{border-bottom: 1px solid #fff;}
+.map-ul li,.map-ul li a{color: #fff;}
+.nav-span3{display: block;margin: 0 auto;height: 1rem;line-height: 1rem;width: 4.6rem;text-align: center;}
+
+
+/* 鐧诲綍娉ㄥ唽澶撮儴 */
+.shadow1{-moz-box-shadow:0px 3px 10px #e5e5e5;-webkit-box-shadow:0px 3px 10px #e5e5e5;box-shadow:0px 3px 10px #e5e5e5;}
+
+/*涓汉涓績*/
+.personal{position: absolute;right: 35px;top: 8px;display: block;height: 0.6rem;width: 0.6rem;}
+.personal img{height: 0.4rem;width: 0.36rem;margin: 0 auto;display: block;margin-top: 0.1rem;}
